@@ -1,0 +1,3 @@
+#Formula da Progressão Aritimética (P.A.)
+
+PA = (n**2 - n)/2
