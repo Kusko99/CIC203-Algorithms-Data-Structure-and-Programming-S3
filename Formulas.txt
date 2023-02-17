@@ -1,3 +1,7 @@
 #Formula da Progressão Aritimética (P.A.)
 
 PA = (n**2 - n)/2
+
+#Curvas de Funções
+
+A curva de uma Função Quadratica é uma parabola
