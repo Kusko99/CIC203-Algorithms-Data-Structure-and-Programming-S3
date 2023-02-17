@@ -4,4 +4,6 @@ PA = (n**2 - n)/2
 
 #Curvas de Funções
 
-A curva de uma Função Quadratica é uma parabola
+A curva de uma Função Linear é uma reta (x)
+A curva de uma Função Quadratica é uma parabola (x**2)
+A curva de uma Função Exponecial é uma Loucura (x**n)
