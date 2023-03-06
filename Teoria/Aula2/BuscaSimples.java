@@ -17,15 +17,15 @@ public class BuscaSimples {
         return ocorrencias;
     }
     static int[] buscaSimplesEx2 (int[]v, int x){
-        int[]posições = new int[v.length];
+        int[]posicoes = new int[v.length];
         int elemento = 0;
         for(int i=0; i<v.length;i++){
             if(v[i] == x){
-                posições[elemento] = i;
+                posicoes[elemento] = i;
                 elemento += 1;
             }
         }
-        return posições;
+        return posicoes;
     }
 }
 
