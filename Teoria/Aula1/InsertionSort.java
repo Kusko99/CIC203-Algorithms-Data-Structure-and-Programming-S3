@@ -14,7 +14,7 @@ public class InsertionSort {
         }
         System.out.println();
     }
-    static void insertionSot(int[]v) {
+    static void insertionSort(int[]v) {
         for(int i = 1; i < v.length; i++){
             int valorAtual = v[i];
             int j = i-1;
