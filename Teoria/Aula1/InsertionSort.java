@@ -34,7 +34,7 @@ public class InsertionSort {
         int[] v = new int[n];
         geraVetor(v);
         exibeVetor(v);
-        insertionSot(v);
+        insertionSort(v);
         exibeVetor(v);
 
         scanner.close();
