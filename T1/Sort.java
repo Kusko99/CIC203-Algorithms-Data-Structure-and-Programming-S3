@@ -1,18 +1,4 @@
-import java.util.Random;
-
 public class Sort {
-    public void geraVetor (int[]v) {
-        Random r = new Random();
-        for (int i = 0; i < v.length; i++){
-            v[i] = r.nextInt(v.length*10);
-        }
-    }
-    public void exibeVetor (int v[]){
-        for(int i=0; i<v.length; i++){
-            System.out.print(v[i] + " ");
-        }
-        System.out.println();
-    }
     public void bubbleSort(int[] v){
         for(int i=1;i<v.length; i++){
             for(int j=0;j<v.length-1;j++){
