@@ -4,10 +4,11 @@ public class TesteSort {
     public static void main(String[] args) {
 
         //ALTERAR SOMENTE ESSA VALORES
-        int tamanhoVetor = 640000;
-        int numeroTestes = 100;
+        int tamanhoVetor = 10000;
+        int numeroTestes = 10;
 
         Sort sort = new Sort();
+        Vetor criaVetor = new Vetor();
 
         int[] vetor = new int[tamanhoVetor];
 
@@ -17,7 +18,7 @@ public class TesteSort {
         System.out.print("\n\n");
 
         for(int i = 1; i <= numeroTestes; i++){
-            sort.geraVetor(vetor);
+            criaVetor.geraVetor(vetor);
             long ini = new Date().getTime();
 
             //Chamada do Método Sort
