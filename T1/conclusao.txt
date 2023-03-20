@@ -1,0 +1,16 @@
+A partir dos dados coletados, pode-se afirmar que, apesar de métodos sutilmente 
+diferentes porem com o mesmo propósito, o método de inserção possui maior destaque 
+em cumprir a tarefa de organizar determinada lista por conta de demonstrar um menor 
+tempo de execução em média. Alem disso, o mesmo apresenta dados discrepantes 
+(outliers) ao longo dos gráficos: diferindo de uma tendencia próxima da linearidade 
+em comparação com os métodos Bubble e de Seleção, porem possuindo maiores tempos 
+para cumprir a tarefa.
+
+Integrantes:
+
+Fernando Freitas de Oliveira 19.00468-0
+Lucas Machado da Costa Pennone 21.01086-2
+Lucas Thiago Mezadri Machado 22.00393-2
+Gustavo Yudji Hiromoto 22.00839-0
+Bruno Teruya 22.01053-0
+Gabriel Gonçalves Renault Cunha 22.01715-0
