@@ -1,3 +1,4 @@
+package pilha_ligada;
 public class Pilha {
     private No primeiro;
 
@@ -42,5 +43,4 @@ public class Pilha {
         this.primeiro = this.primeiro.getProximo();
         return temp;
     }
-
 }

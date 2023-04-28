@@ -1,3 +1,5 @@
+package pilha_ligada;
+
 public class No {
     private char info;
     private No proximo;
