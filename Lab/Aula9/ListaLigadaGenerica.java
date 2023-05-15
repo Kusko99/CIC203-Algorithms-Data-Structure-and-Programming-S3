@@ -66,4 +66,18 @@ public class ListaLigadaGenerica <T>{
         primeiro = primeiro.getProximo();
         return info;
     }
+    @Override
+    public String toString(){
+        String s = "";
+        if(estaVazia()){
+            s = "lista vazia";
+        }else{
+            No<T> runner = primeiro;
+            do{
+                s+= runner.getInfo();
+                runner = runner.getProximo();
+            }while(runner != primeiro);
+        }
+        return s;
+    }
 }
