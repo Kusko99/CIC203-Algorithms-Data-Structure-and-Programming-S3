@@ -47,6 +47,43 @@ public class Fila {
         tamanho--;
         return temp;
     }
+    public int achaPosicao(int n){
+        No busca = primeiro;
+        for(int i = 1; i<=tamanho; i++){
+            if(busca.info == n){
+                return i;
+            }
+            busca = busca.proximo;
+        }
+        return -1;
+    }
+    public Fila merge(Fila a, Fila b){
+        No aux_a = a.primeiro;
+        No aux_b = b.primeiro;
+        Fila nova = new Fila();
+        while (aux_a != null){
+            nova.enfilera(aux_a.info);
+            aux_a = aux_a.proximo;
+        }while(aux_b != null){
+            nova.enfilera(aux_b.info);
+            aux_b = aux_b.proximo;
+        }
+        return nova;
+    }
+    public void furar(int n){
+        No novo = new No(n);
+        novo.proximo = primeiro;
+        primeiro = novo;
+    }
+    public void inverterFila(){
+        Pilha pilha = new Pilha(tamanho);
+        while(!pilha.estaCheia()){
+            pilha.push(desenfilera());
+        }
+        while(!pilha.estaVazia()){
+            enfilera(pilha.pop());
+        }
+    }
     @Override
     public String toString(){
         String s = "Fila: ";
