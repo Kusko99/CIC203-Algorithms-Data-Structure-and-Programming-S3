@@ -41,14 +41,18 @@ public class Fila <T>{
     
     @Override
     public String toString(){
-        String s = "Fila";
+        String s = "Fila: ";
         if(estaVazia()){
             s += "vazia";
         }else{
+            int i = 1;
             No<T> runner = primeiro;
             while(runner != null){
+                s += "[Pos" + i + ": ";
                 s += runner.getInfo() + " ";
                 runner = runner.getProximo();
+                s += "]";
+                i++;
             }
         }
         return s;
