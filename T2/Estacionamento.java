@@ -46,28 +46,18 @@ public class Estacionamento {
                     }
                 }
                 if(!espera.estaVazia()){
-                    boolean vendoEspera = true;
-                    while(vendoEspera == true){
-                        if(espera.estaVazia()){
-                            vendoEspera = false;
-                        }else if(ocupacao < tamanho){
-                            Carro temp = espera.desenfilera();
-                            queuePark.enfilera(temp);
-                            ocupacao++;
-                            System.out.println();
-                            System.out.println("Espaço disponivél no estacionamento carro " + temp.getPlaca() + " entrando");
-                            System.out.println("Estacionamento com " + ocupacao + " carros");
-                            System.out.println(queuePark);
-                            esperando--;
-                            
-                        }if(ocupacao == tamanho){
-                            System.out.println();
-                            System.out.println("Estacionamento lotado ");
-                            System.out.println("Fila da espera com: " + esperando);
-                            System.out.print(espera);
-                            vendoEspera = false;
-                        }
-                        
+                    Carro temp = espera.desenfilera();
+                    queuePark.enfilera(temp);
+                    ocupacao++;
+                    System.out.println();
+                    System.out.println("Espaço disponivél no estacionamento carro " + temp.getPlaca() + " entrando");
+                    System.out.println("Estacionamento com " + ocupacao + " carros na espera");
+                    System.out.println(queuePark);
+                    esperando--;  
+                    if(!espera.estaVazia()){
+                        System.out.println();
+                        System.out.println("Ainda há " + esperando + " carros");
+                        System.out.println(espera);
                     }
                 }
             }
