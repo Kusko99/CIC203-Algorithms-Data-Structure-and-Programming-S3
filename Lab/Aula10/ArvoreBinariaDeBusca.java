@@ -63,12 +63,22 @@ public class ArvoreBinariaDeBusca {
             return toStringRec(raiz);
         }
     }
-    public String toStringRec(NoBin atual){
+    private String toStringRec(NoBin atual){
         if(atual != null){
             return toStringRec(atual.getEsq()) + atual + toStringRec(atual.getDir());
         }else{
             return "";
         }
+    }
+    public int contaNos() {
+        if(raiz == null){
+            return 0;
+        }return contaNosRec(raiz);
+    }
+    private int contaNosRec(NoBin atual){
+        if(atual != null){
+            return contaNosRec(atual.getEsq()) + 1 + contaNosRec(atual.getDir());
+        }return 0;
     }
 }
 
