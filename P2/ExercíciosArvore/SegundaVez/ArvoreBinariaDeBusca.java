@@ -204,5 +204,16 @@ public class ArvoreBinariaDeBusca {
             return ehBinariaRec(atual.getDir()) && ehBinariaRec(atual.getEsq());
         }
     }
+
+    public int menor(){
+        if(raiz == null){
+            return -1;
+        }
+        NoBin aux = raiz;
+        while(aux.getEsq() != null){
+            aux = aux.getEsq();
+        }
+        return aux.getInfo();
+    }
 }
 

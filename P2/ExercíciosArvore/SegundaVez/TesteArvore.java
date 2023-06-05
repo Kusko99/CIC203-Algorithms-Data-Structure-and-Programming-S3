@@ -21,5 +21,6 @@ public class TesteArvore {
         caliope.insere(8);
         
         System.out.println(caliope.ehGemas(carioca));
+        System.out.println(carioca.menor());
     }
 }
